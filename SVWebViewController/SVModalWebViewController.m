@@ -57,4 +57,12 @@
     self.navigationBar.tintColor = self.barsTintColor;
 }
 
+#pragma mark - Custom Accessors
+-(void) setCustomSetNetworkActivityIndicatorVisible:(void (^)(BOOL))customSetNetworkActivityIndicatorVisible
+{
+    _customSetNetworkActivityIndicatorVisible = customSetNetworkActivityIndicatorVisible;
+    
+    self.webViewController.customSetNetworkActivityIndicatorVisible = customSetNetworkActivityIndicatorVisible;
+}
+
 @end

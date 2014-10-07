@@ -12,4 +12,6 @@
 - (instancetype)initWithURL:(NSURL*)URL;
 - (instancetype)initWithURLRequest:(NSURLRequest *)request;
 
+@property (nonatomic, copy) void(^customSetNetworkActivityIndicatorVisible)(BOOL networkActivityIndicatorVisible);
+
 @end
